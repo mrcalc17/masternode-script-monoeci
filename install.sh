@@ -76,6 +76,8 @@ decho "Installing bitcoin PPA..."
 apt-get -y install software-properties-common >> $LOG_FILE 2>&1
 apt-add-repository -y ppa:bitcoin/bitcoin >> $LOG_FILE 2>&1
 apt-get -y update >> $LOG_FILE 2>&1
+apt-get -y install libdb4.8-dev libdb4.8++-dev >> $LOG_FILE 2>&1
+
 
 # Install required packages
 decho "Installing base packages and dependencies..."
