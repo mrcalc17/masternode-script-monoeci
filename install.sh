@@ -148,10 +148,10 @@ echo 'Downloading daemon...'
 cd
 wget https://github.com/cryptosnail/dash/releases/download/12.2.3.m/monoeci.tar.gz >> $LOG_FILE 2>&1
 tar xvzf monoeci.tar.gz >> $LOG_FILE 2>&1
-cp monoeciCore-0.12.2/bin/monoecid /usr/bin/ >> $LOG_FILE 2>&1
-cp monoeciCore-0.12.2/bin/monoeci-cli /usr/bin/ >> $LOG_FILE 2>&1
-cp monoeciCore-0.12.2/bin/monoeci-tx /usr/bin/ >> $LOG_FILE 2>&1
-rm -rf monoeciCore-0.12.2 >> $LOG_FILE 2>&1
+cp monoeci/bin/monoecid /usr/bin/ >> $LOG_FILE 2>&1
+cp monoeci/bin/monoeci-cli /usr/bin/ >> $LOG_FILE 2>&1
+cp monoeci/bin/monoeci-tx /usr/bin/ >> $LOG_FILE 2>&1
+rm -rf monoeci >> $LOG_FILE 2>&1
 
 #Run monoecid as selected user
 sudo -H -u $whoami bash -c 'monoecid' >> $LOG_FILE 2>&1
