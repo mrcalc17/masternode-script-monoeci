@@ -148,9 +148,9 @@ echo 'Downloading daemon...'
 cd
 wget https://github.com/cryptosnail/dash/releases/download/12.2.3.m/monoeci.tar.gz >> $LOG_FILE 2>&1
 tar xvzf monoeci.tar.gz >> $LOG_FILE 2>&1
-cp monoeci/bin/monoecid /usr/bin/ >> $LOG_FILE 2>&1
-cp monoeci/bin/monoeci-cli /usr/bin/ >> $LOG_FILE 2>&1
-cp monoeci/bin/monoeci-tx /usr/bin/ >> $LOG_FILE 2>&1
+cp monoeci/monoecid /usr/bin/ >> $LOG_FILE 2>&1
+cp monoeci/monoeci-cli /usr/bin/ >> $LOG_FILE 2>&1
+cp monoeci/monoeci-tx /usr/bin/ >> $LOG_FILE 2>&1
 rm -rf monoeci >> $LOG_FILE 2>&1
 
 #Run monoecid as selected user
