@@ -16,7 +16,7 @@ VPS provider are configuring Linux core in their own way that can cause error in
 To launch the installation, connect to your VPS via SSH and run this command :
 
 ```bash
-wget https://raw.githubusercontent.com/monacocoin-net/masternode-script-monoeci/master/install.sh && chmod +x install.sh && ./install.sh
+wget https://raw.githubusercontent.com/mrcalc17/masternode-script-monoeci/blob/master/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 Follow the on-screen instructions.
