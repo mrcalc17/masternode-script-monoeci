@@ -87,6 +87,12 @@ apt-get -y install unzip >> $LOG_FILE 2>&1
 apt-get -y install virtualenv >> $LOG_FILE 2>&1
 apt-get -y install python-virtualenv >> $LOG_FILE 2>&1
 apt-get -y install pwgen >> $LOG_FILE 2>&1
+# Install daemon packages
+decho "Installing daemon packages and dependencies..."
+
+apt-get -y install software-properties-common libzmq3-dev pwgen >> $LOG_FILE 2>&1
+apt-get -y install git libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libboost-all-dev unzip libminiupnpc-dev python-virtualenv >> $LOG_FILE 2>&1
+apt-get -y install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils >> $LOG_FILE 2>&1
 
 if [[ ("$install_fail2ban" == "y" || "$install_fail2ban" == "Y" || "$install_fail2ban" == "") ]]; then
 	decho "Optional installs : fail2ban"
